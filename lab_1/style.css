@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+    margin: 0px;
+}
+main {
+    margin: 0px;
+}
+header, footer {
+    background-color: green;
+    color: white;
+    padding: 10px 0;
+    margin: 0px;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+header h1 {
+    font-size: 17px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0;
+}
+
+.content-box {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.content-box h1 {
+    font-size: 2em;
+    color: white;
+    text-align: left;
+}
+
+.image-placeholder {
+    float: left; /* Обтекание по левому краю */
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    margin: 10px 20px 10px 0; /* Отступы: справа от изображения, чтобы текст не касался */
+    border-radius: 20px 0 20px 0;
+    padding: 0;
+}
+.text_lorem {
+    margin: 5px 0;
+    text-align: justify;
+    letter-spacing: 0.3px;
+    word-spacing: 0.5px;
+}
+
+
+a {
+    color: red;
+}
+
+h2 {
+    color: white;
+}
+.h2_list {
+    word-spacing: 10px;
+    text-align: left;
+}
+.h2_list .colortext{
+    color: red;
+}
+.first_list{
+    margin: 0px 20px;
+}
+.first_list ul {
+    text-align: left;
+    padding: 5px 15px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+.first_list ul .green-text{
+    letter-spacing: 5px;
+}
+
+.green-text {
+    color: #00FF00;
+}
+
+.container {
+    display: flex; 
+    align-items: center; 
+}
+.container h2{
+    font-size: 19px;
+}
+
+.example_modify {
+    text-align: left;
+    margin-right: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);    
+    gap: 5px; 
+    width: 125px;
+    height: 125px;
+    background-color: blue;
+    padding: 3px;
+    font-size: 15px;
+    border: 1px solid white;
+}
+
+.grid-item {
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: white;
+}
+
+.grid-item-green {
+    border: 1px solid white;
+    background-color: green;
+    grid-column: 1 / 2; 
+    grid-row: 1 / 3;    
+}
+
+.grid-item-red {
+    border: 1px solid white;
+    background-color: red;
+    grid-column: 2 / 4; 
+    grid-row: 3 / 4;    
+}
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+u {
+    text-decoration: underline;
+}
+
+del {
+    text-decoration: line-through;
+}
