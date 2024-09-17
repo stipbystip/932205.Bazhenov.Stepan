@@ -1,0 +1,11 @@
+.container {
+    text-align: center;
+}
+
+.content {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    width: 600px;
+    padding:0;
+}

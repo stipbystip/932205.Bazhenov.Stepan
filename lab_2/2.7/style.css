@@ -1,0 +1,50 @@
+body{
+    color: white;
+}
+.static-div {
+    position: static;
+}
+
+.relative-div {
+    position: relative;
+}
+
+.absolute-div {
+    position: absolute;
+}
+
+.fixed-div {
+    position: fixed;
+}
+
+.small {
+    height: 100px;
+    width: 200px;
+}
+
+.big {
+    height: 300px;
+    width: 600px;
+}
+
+.pink {
+    background-color: rgb(183, 74, 92);
+}
+
+.red {
+    background-color: rgb(167, 51, 51);
+}
+
+.purple {
+    background-color: purple;
+}
+.absolute-div {
+    width: 300px;
+}
+.orange {
+    background-color: rgb(156, 108, 19);
+}
+
+.green {
+    background-color: green;
+}
