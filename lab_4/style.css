@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.header {
+    background-color: #4f75a1;
+    padding: 10px;
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-content: center;
+}
+
+.header__img {
+    margin-left: 15%;
+}
+
+.placeholder {
+    height:50px;
+    width: 100%;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex: auto 1 1;
+    justify-content: center;
+    background-color: #edeef0;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 20px;
+}
+
+.navBar_item {
+    padding: 10px;
+    color: #507299;
+    transition: background-color 0.3s ease-out;
+    text-decoration: none;
+}
+
+.navBar_item:hover {
+    background-color:#e1e5eb;
+}
+
+.postsArea {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.postsArea_post {
+    max-width: 500px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid rgb(192, 192, 192);
+    box-shadow: 0 0 5px rgb(210, 210, 210);
+    color: rgb(58, 58, 58);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.postsArea_post_titleContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.postsArea_post_titleContainer_title {
+    font-weight: bold;
+}
+
+.postsArea_post_contentContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.postsArea_post_contentContainer_text {
+    word-wrap: break-word;
+}
+
+.postsArea_post_contentContainer__text::selection {
+    background: rgb(212, 212, 212);
+    color:#507299;
+}
+
+.postsArea_post_contentContainer_image {
+    max-width: 100%;
+    height: auto;
+}
+
+.postsArea_post_divider {
+    margin-left:20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 3px;
+    background-color: rgb(192, 192, 192);
+    border:0;
+    flex-shrink: 0;
+}
+
+.topDivider {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.postsArea_post_buttonsContainer {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.postsArea_post_buttonsContainer_button {
+    padding: 5px;
+    color: #507299;
+    transition: background-color 0.3s ease-out;
+    text-decoration: none;
+
+
+}
+
+.postsArea_post_buttonsContainer_button:hover {
+    background-color:#e1e5eb;
+}
+
+.rightBarContainer_rightBar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.rightBarContainer_rightBar_infoBox {
+    width: 200px;
+    background-color: white;
+    border: 1px solid rgb(192, 192, 192);
+    box-shadow: 0 0 5px rgb(210, 210, 210);
+    color: rgb(58, 58, 58);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rightBarContainer_rightBar_infoBox_headerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.rightBarContainer_rightBar_infoBox_headerContainer_header {
+    font-weight: bold;
+}
+
+.rightBarContainer_rightBar_infoBox_textContainer {
+    background-color: #e1e5eb;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.rightBarPlaceholder {
+    width: 200px;
+    height: 10px;
+}
+
+.footer {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:rgb(192, 192, 192);
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .navBar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navBar_item {
+        margin-right: 20px;
+    }
+
+    .postsArea {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rightBar {
+        display: none;
+    }
+
+    .rightBarPlaceholder {
+        display: none;
+    }
+}
