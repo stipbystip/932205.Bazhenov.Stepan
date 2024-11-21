@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="mainBox">
+                <div class="mainBox__buttonsContainer">
+                    <a class="mainBox__buttonsContainer__button inactiveBtn" href="#" id="showLeftColumnBtn">
+                        Левая колонка
+                    </a>
+                    <a class="mainBox__buttonsContainer__button activeBtn" href="#" id="showBothBtn">
+                        Обе колонки
+                    </a>
+                    <a class="mainBox__buttonsContainer__button inactiveBtn" href="#" id="showRightColumnBtn">
+                        Правая колонка
+                    </a>
+                </div>
+                <div class="mainBox__columnsContainer">
+                    <div class="mainBox__columnsContainer__leftColumn" id="leftColumn">
+                        <div class="imageContainer">
+                            <img src="cat.jpg" class="image" id="catImg">
+                        </div>
+                    </div>
+                    <div class="mainBox__columnsContainer__rightColumn" id="rightColumn">
+                        <div class="imageContainer">
+                            <img src="dog.jpg" class="image" id="dogImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

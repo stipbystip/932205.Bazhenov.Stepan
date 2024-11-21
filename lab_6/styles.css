@@ -1,0 +1,124 @@
+* { 
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+}
+
+.mainBox {
+
+    width: 800px;
+    height: 500px;
+
+    border: 1px solid rgb(91, 91, 91);
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(227, 227, 227);
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainBox__buttonsContainer {
+    margin-left: 40px;
+    margin-right: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mainBox__buttonsContainer__button {
+    border: 1px solid rgb(91, 91, 91);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(227, 227, 227);
+    padding: 10px;
+
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    transition: background-color 0.3s ease-out;
+}
+
+.activeBtn {
+    color: black;
+    background-color: rgb(0, 255, 166);
+    border:rgb(0, 255, 166);
+}
+
+.inactiveBtn:hover {
+
+    background-color: rgb(223, 223, 223);
+}
+
+.mainBox__columnsContainer {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex: auto 1 1;
+}
+
+.mainBox__columnsContainer__leftColumn {
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: rgb(32, 32, 32);
+    border: 1px solid rgb(91, 91, 91);
+    box-shadow: 0 0 5px rgb(227, 227, 227);
+    border-radius: 15px;
+    margin-right: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainBox__columnsContainer__rightColumn {
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: rgb(32, 32, 32);
+    border: 1px solid rgb(91, 91, 91);
+    box-shadow: 0 0 5px rgb(227, 227, 227);
+    border-radius: 15px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer {
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image {
+    width: 200%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
